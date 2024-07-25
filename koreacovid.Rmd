@@ -44,7 +44,8 @@ cat~cat
 
 ```{r}
 barchartGC(~result + Sex,data=kRdata)
-barchartGC(~ + result,data=kRdata, type="percent")
+barchartGC(~ + result,data=kRdata,
+type="percent")
 
 ```      
 This barchart shows that more males died than females.
@@ -58,6 +59,13 @@ This barchart shows that more males died than females.
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The numerical summary shows that 64 percent of males died and 36 percent of females died. 
+Twice the amount of males have died than females.
 
 ## Inferential results 
 
