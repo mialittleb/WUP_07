@@ -32,6 +32,9 @@ state of a patient must be died or alive - we adjust that as well
   
 # Your Question - Is dying independent of sex?
 
+$H_0$:there is no difference in...
+
+$H_A$ there is a difference in...
 
 # Methods
  
@@ -69,8 +72,27 @@ Twice the amount of males have died than females.
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The p-value for the chi-square test is 0.001 so we reject the null hypothesis.
+
+
+The fisher exact test shows that men are 2.3 times more likely to die before women in korea.
 
 ## Conclusions
+
+
+
 
