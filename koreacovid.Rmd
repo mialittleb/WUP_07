@@ -51,7 +51,7 @@ barchartGC(~ + result,data=kRdata,
 type="percent")
 
 ```      
-This barchart shows that more males died than females.
+This barchart shows that more males died tan females.h
 
   
 
@@ -93,6 +93,10 @@ The fisher exact test shows that men are 2.3 times more likely to die before wom
 
 ## Conclusions
 
-
+The question was,  Is dying independent of sex? The method I used was result is a categorical variable,sex is  categorical,
+result depends on sex, we use helper file   
+cat~cat. The barchart shows that more males died than females.The p-value for the chi-square test is 0.001 so we reject the null hypothesis.
+the fisher exact test shows that men are 2.3 times more likely to die before women in korea. I reject the null hypothesis because dying does pertain to sex.
+     
 
 
