@@ -41,8 +41,13 @@ cat~cat
 
 
 ## Graphical results - use ggplot commands to do this  
-      
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~ + result,data=kRdata, type="percent")
+
+```      
+This barchart shows that more males died than females.
 
   
 
